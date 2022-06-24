@@ -1,0 +1,30 @@
+def tambah(arr, x):
+    if x.isnumeric():
+        x = int(x)
+    arr.append(x)
+
+def sisip(arr, i, x):
+    if x.isnumeric():
+        x = int(x)
+    arr.insert(int(i), x)
+
+def buang(arr, x):
+    if int(x) > len(arr):
+        print(f"Output: Perintah tidak dapat di eksekusi !")
+        return
+    arr.pop(int(x))
+
+while True:
+    inp = input("Input: ").split(" ")
+    initial_list = [1,3,5]
+
+    if inp[0] == "tambah":
+        tambah(initial_list, inp[1])
+    elif inp[0] == "sisip":
+        sisip(initial_list, inp[1], inp[2])
+    elif inp[0] == "buang":
+        buang(initial_list, inp[1])
+    else:
+        print(f"Output: Perintah tidak dapat di eksekusi !")
+
+    print(f"Output: {initial_list}")
