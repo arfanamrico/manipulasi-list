@@ -15,3 +15,12 @@ list = " ".join(list)
 print(list)
 
 #menghapus kata axexxa
+
+==============================================
+import re
+
+teks = 'maretnbulan mana minggu rs karna nganter vaksin xfxfxxbaxfxfxxbannlatepostnn xexxa'
+tek = re.sub(r'(x[^\s])*', '', teks)
+print(tek)
+
+================================
