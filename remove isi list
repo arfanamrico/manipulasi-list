@@ -1,0 +1,14 @@
+from os import remove
+list = ['arfan','ashif','koxexxa']
+for i in list:
+  nx = 0
+  for h in i:
+    if h == 'x':
+      nx += 1
+    else:
+      pass
+  if nx >= 2:
+    list.remove(i)   
+  else:
+    pass
+print(list)
