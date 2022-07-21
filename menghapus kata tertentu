@@ -1,0 +1,17 @@
+teks = 'dokter alexander akar wiratama perkasa putra jenderal tni andika perkasa cucu hendropriyono nndengar kabar burung axexxa'
+list = teks.split(' ')
+for i in list:
+  nx = 0
+  for h in i:
+    if h == 'x':
+      nx += 1
+    else:
+      pass
+  if nx >= 2:
+    list.remove(i)   
+  else:
+    pass
+list = " ".join(list)
+print(list)
+
+#menghapus kata axexxa
