@@ -1,0 +1,4 @@
+kamus = [{'id':1,'nama':'arfan','kelas':'satu'},{'id':2,'nama':'ahif','kelas':'dua'},{'id':3,'nama':'ashim','kelas':'tiga'}]
+for d in kamus:
+  for k,v in d.items():
+    print(k,v)
